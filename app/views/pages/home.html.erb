@@ -1,8 +1,5 @@
-<h1>This is the new title</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>What a beautiful day</h1>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente atque hic, necessitatibus ipsa repellat, corporis in debitis delectus, possimus minima ratione et accusamus iusto. Qui debitis voluptates doloremque aperiam sequi.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam provident sint obcaecati fugiat officiis ab dolor temporibus repellendus incidunt molestias eaque, sunt earum reprehenderit reiciendis amet esse consectetur? Aperiam, maiores!</p>
-
-<img src="https://source.unsplash.com/random">
+<ul>
+  <% @movies.each do |movie| %>
+    <li><%= movie.title %></li>
+  <% end %>
+</ul>
